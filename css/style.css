@@ -29,34 +29,33 @@ body{
 .logo img{
 	width:150px;
 	height:150px;
-	border:1px solid #fff;
+	border:3px solid #fff;
 	border-radius:50%;
 	margin-left:50px;
 }
 .logoname{
-	margin-left:75px;
+	margin-left:57px;
 	font-weight:700;
 	color:rgb(112,171,151);
+	letter-spacing: 3px;
 }
 .mainheader {
 	background: rgba(247,249,150,0.6); 
-	height: 100px;
+	height: 120px;
+	padding:10px 0;
 }
 .topmenu a{
 	text-decoration: none;
 	color:black;
 }
 .topmenu{
-	display:flex;
+	/*display:flex;
 	flex-wrap:wrap;
-	justify-content:space-around;
+	justify-content:space-around;*/
 	text-align:center;
 	width:inherit;
 	padding:40px 16px;
-}
-.pulldown-point {
-	color: #f93c00;
-
+	z-index:2;
 }
 .menupoint {
 	display: inline-block;
@@ -70,8 +69,9 @@ body{
 	left: 0;
 	padding: 20px 0 5px;
 	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
-	background: rgba(247,249,150,0.3);
+	background: rgba(247,249,150,1);
 	border-radius:5px;
+	z-index:2;
 }
 .menupoint:hover > span,
 .menupoint > span:hover {
@@ -86,13 +86,24 @@ body{
 .bottomheader {
 	background: #f93c00;
 }
-
+/*.mainpage{
+	background: transparent url(file:///C:/Documents%20and%20Settings/%D0%9D%D0%B8%D0%BB%D1%83%D1%84%D0%B5%D1%80/Documents/Frontend/REPO/project/images/d-burger.svg) center no-repeat;
+	display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}*/
 /* main */
 main {
 	flex: 1 1 auto;
 	background: #fff;
+	position:relative;
+	z-index:1;
 }
-
+.d-block w-100{
+	width:100%;
+	height:100%;
+}
 /* footer */
 footer {
 	background: rgb(112,171,151);
@@ -101,6 +112,9 @@ footer {
 }
 .shopname{
 	text-align:center;
+	color:rgba(247,249,150,1);
+	font-weight:bold;
+	letter-spacing: 3px;
 }
 .footerinfo{
 	display:flex;
@@ -108,20 +122,24 @@ footer {
 	justify-content:space-around;
 	margin-top:30px;
 }
-.address :before{
-	content:
-}
 .subscription{
-	position:relative;
-	height:36px;
+	position:relative !important;
+	height:36px !important;
+}
+.subscription div{
+	box-sizing:content-box;
 }
 .subscription input{
-	height:30px;
+	height:36px ;
+	border:none;
 }
 .subscription button{
-	position:absolute;
-	width:36px;
-	height:36px;
+	position:absolute ;
+	width:36px ;
+	height:36px ;
+	border:none;
+	border-radius:2px;
+	background:rgba(247,249,150,0.6);
 }
 .footermenupoint{
 	display:flex;
@@ -134,8 +152,30 @@ footer {
 .footermenupoint :hover{
 	color:rgba(247,249,150,0.6);
 }
-.d-block w-100{
-	width:100%;
-	height:100%;
-}
+/* catalog */
+.catalog{
+	display: flex;
+	gap: 8px;
 
+}
+aside{
+	flex:none;
+	width: 180px;
+	background:rgba(247,249,150,0.6);
+}
+.cat_unit{
+	flex: 1 1 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 8px;
+}
+.cat_part{
+	height: 150px;
+	width: 150px;
+	background: pink;
+}
+.cat_img{
+	height: 150px;
+	width: 150px;
+}
