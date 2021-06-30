@@ -15,6 +15,32 @@ body{
 	margin: 0 auto;
 	padding: 16px;
 }
+/*popup*/
+.popup-desk {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.3);
+}
+.popup-desk.active {
+	display: block;
+}
+.popup {
+	position: absolute;
+	left: calc(50% - 150px);
+	top: 300px;
+	width: 300px;
+	background: rgba(247,249,150,1);
+	border-radius: 20px;
+	padding: 30px;
+	box-sizing: border-box;
+	z-index:3;
+}
+
+p
 /* header */
 .topheader {
 	background: #fff;
@@ -26,8 +52,11 @@ body{
 	height:inherit;
 	box-sizing:border-box;
 }
+.logo{
+	max-width:300px;
+}
 .logo img{
-	width:150px;
+	max-width:150px;
 	height:150px;
 	border:3px solid #fff;
 	border-radius:50%;
@@ -38,6 +67,13 @@ body{
 	font-weight:700;
 	color:rgb(112,171,151);
 	letter-spacing: 3px;
+}
+.basket {
+	float: right;
+	margin: -140px 0 30px 30px;
+	border: 1px solid #000;
+	line-height: 40px;
+	width:30px;
 }
 .mainheader {
 	background: rgba(247,249,150,0.6); 
@@ -67,6 +103,7 @@ body{
 	position: absolute;
 	top: 20px;
 	left: 0;
+	width:120px;
 	padding: 20px 0 5px;
 	box-shadow: 1px 2px 5px rgba(0,0,0,.4);
 	background: rgba(247,249,150,1);
@@ -108,7 +145,7 @@ main {
 footer {
 	background: rgb(112,171,151);
 	color: #fff;
-	height:200px;
+	height:auto;
 }
 .shopname{
 	text-align:center;
