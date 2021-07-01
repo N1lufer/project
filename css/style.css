@@ -196,16 +196,14 @@ footer {
 .footermenupoint :hover{
 	color:rgba(247,249,150,0.6);
 }
+.instagram:after{
+	content:url('images/icon_insta.svg');
+}
 /* catalog */
 .catalog{
 	display: flex;
 	gap: 8px;
 
-}
-aside{
-	flex:none;
-	width: 180px;
-	background:rgba(247,249,150,0.6);
 }
 .cat_unit{
 	flex: 1 1 auto;
@@ -215,11 +213,61 @@ aside{
 	gap: 8px;
 }
 .cat_part{
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	background: pink;
 }
 .cat_img{
-	height: 150px;
-	width: 150px;
+	object-fit: cover;
+	height: 200px;
+	width: 200px;
+}
+/*aside*/
+aside{
+	flex:none;
+	width: 300px;
+	background:rgba(247,249,150,0.6);
+}
+.catmenu {
+	padding: 16px;
+}
+.catmenu_item {
+	padding: 0 20px 10px;
+	position: relative;
+}
+.catmenu_item:before {
+	content: '=>';
+	position: absolute;
+	left: 0;
+}
+.catmenu_item a {
+	display: block;
+	color: rgb(112,171,151);
+	text-decoration: none;
+}
+.catmenu_item a:hover {
+	text-decoration: underline;
+}
+.submenu_mover {
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+.open .submenu_mover {
+	transform: rotate(180deg);
+}
+.submenu {
+	height: 0;
+	overflow: hidden;
+}
+.submenu a {
+	position: relative;
+	padding-left: 20px;
+}
+.submenu a:before {
+	content: '->';
+	position: absolute;
+	left: 0;
 }
