@@ -34,7 +34,7 @@ $(function(){
             $('.popup').html('<p class="popup-header">Личный кабинет закрыт на ремонт.<br>Регистрации не будет до 1 января.</p><a href="https://yandex.ru/" class="register">Войти</a>');
             $('.basket').html(5);
         } else {
-            $('.popup').html('<p class="popup-header">Личный кабинет</p><input type="text" name="fullname" placeholder="Логин"><input type="password" name="password" placeholder="Пароль"><button type="submit">Войти</button><a href="https://yandex.ru/" class="register">Зарегистрироваться</a>');
+            $('.popup').html('<p class="popup-header">ЛИЧНЫЙ КАБИНЕТ</p><input type="text" name="fullname" placeholder="Логин"><input type="password" name="password" placeholder="Пароль"><button type="submit">Войти</button><a href="https://yandex.ru/" class="register">Зарегистрироваться</a>');
             $('.basket').html(6);
         }
     });
@@ -94,6 +94,7 @@ function tovarDelete(point) {
     }
 }
 function tovarChange() {
+	let c = 
     // опознать товар
     // найти его в ордере
     // изменить количество в ордере

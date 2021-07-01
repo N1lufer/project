@@ -39,9 +39,40 @@ body{
 	box-sizing: border-box;
 	z-index:3;
 }
-
-
+.popup-header{
+	color:rgb(112,171,151);
+	text-transform:uppercase;
+	text-align:center;
+}
+[name="fullname"],[name="password"]{
+	margin: 0 15px 15px;
+	height:40px;
+}
+.register{
+	margin:0 15px 15px 19px;
+	text-decoration:none;
+	text-transform:uppercase;
+	color:black;
+}
+.popup button{
+	margin: 0 15px 15px;
+	background:rgb(112,171,151);
+	border:none;
+	width:100px;
+	height:40px;
+	border-radius:2px;
+}
+.preheader{
+	display:flex;
+	float:right;
+	width:100px;
+	justify-content:space-around;
+	margin:16px 40px 16px;
+}
 /* header */
+header{
+	height:100%;
+}
 .topheader {
 	background: #fff;
 	color: black;
@@ -70,12 +101,13 @@ body{
 }
 .basket {
 	float: right;
-	margin: 30px 0 30px 30px;
+	margin: 50px -120px 30px 30px;
 	border: 1px solid rgb(112,171,151);
 	background:rgba(247,249,150,0.6);
 	border-radius:2px;
 	line-height: 40px;
 	width:100px;
+	display:inline-block
 }
 .basket-label {
 	position: absolute;
@@ -196,9 +228,14 @@ footer {
 .footermenupoint :hover{
 	color:rgba(247,249,150,0.6);
 }
-.instagram:after{
-	content:url('images/icon_insta.svg');
+.copyright{
+	text-align:center;
+	height:40px;
+	color:rgb(255,255,255,0.6);
+	border-top:1px solid rgb(255,255,255,0.3);
+	padding-top: 20px;
 }
+
 /* catalog */
 .catalog{
 	display: flex;
@@ -227,16 +264,18 @@ aside{
 	flex:none;
 	width: 300px;
 	background:rgba(247,249,150,0.6);
+	border-radius:20px;
 }
 .catmenu {
-	padding: 16px;
+	padding: 30px 40px;
 }
 .catmenu_item {
-	padding: 0 20px 10px;
+	padding: 15px 20px 15px;
 	position: relative;
+	border-bottom: 1px solid rgb(112,171,151);
 }
 .catmenu_item:before {
-	content: '=>';
+	color:rgb(112,171,151);
 	position: absolute;
 	left: 0;
 }
@@ -252,8 +291,10 @@ aside{
 	position: absolute;
 	right: 0;
 	top: 0;
+	margin: 15px;
 	cursor: pointer;
 	transition: all 1s ease;
+	color: rgb(112,171,151);
 }
 .open .submenu_mover {
 	transform: rotate(180deg);
