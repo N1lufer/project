@@ -165,7 +165,7 @@ header{
 	color:gray;
 }
 .pulldown-point:hover {
-	color: #000;
+	color: gray;
 }
 .bottomheader {
 	background: #f93c00;
@@ -308,7 +308,6 @@ aside{
 	padding-left: 20px;
 }
 .submenu a:before {
-	content: '->';
 	position: absolute;
 	left: 0;
 }

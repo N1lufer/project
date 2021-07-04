@@ -12,6 +12,7 @@ $(function(){
                 height: ($(this).parent().find('.submenu a').length * 24)
             }, 1000);
         }
+		
     });
     
     $('button.basket').click(function(){
@@ -41,12 +42,12 @@ $(function(){
     
     $(document).on('click', 'button[type="submit"]', function(){
         alert('OGOGO!!!');
+
     });
-    
     $(document).on('click', '.order .del > div', function(){
         tovarDelete(this);
     });
-    
+    $('#privet').click(function(){alert('Привет!')});
     $(document).on('change input', '.order .num > input', function(){
         tovarChange(this);
     });
@@ -104,4 +105,6 @@ function tovarChange() {
 }
 function tovarCount() {
     alert('It works!');
+	
+
 }
