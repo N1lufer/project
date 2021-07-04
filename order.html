@@ -7,6 +7,9 @@
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery-3.6.0.min.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
+		<script src="js/jquery.mask.js"></script>
+		<script src="js/order.js"></script>
+        <script src="js/calendar.js"></script>
 		<script src="js/scripts.js"></script>
 	</head>
 	<body>
@@ -80,29 +83,33 @@
 				<aside>
 					<div class="catmenu">
                         <div class="catmenu_item">
-                            <a href="#">Tovar 1</a>
+                            <a href="#">БУКЕТЫ</a>
                             <div class="submenu">
-                                <a href="#">Tovar 1 version 1</a>
-                                <a href="#">Tovar 1 version 2</a>
-                                <a href="#">Tovar 1 version 3</a>
-                                <a href="#">Tovar 1 version 4</a>
+                                <a href="#">Букеты с розами</a>
+                                <a href="#">Букеты с пионами</a>
+                                <a href="#">Букеты с орхидеями</a>
+                                <a href="#">Букеты из сухоцветов</a>
                             </div>
                             <div class="submenu_mover">V</div>
                         </div>
                         <div class="catmenu_item">
-                            <a href="#">Tovar 2</a>
+                            <a href="#">КОМПОЗИЦИИ</a>
                             <div class="submenu">
-                                <a href="#">Tovar 2 version 1</a>
-                                <a href="#">Tovar 2 version 2</a>
+                                <a href="#">Цветы в шляпной корбке</a>
+                                <a href="#">Корзина с цветами</a>
+								<a href="#">Розы в коробке</a>
                             </div>
                             <div class="submenu_mover">V</div>
                         </div>
                         <div class="catmenu_item">
-                            <a href="#">Tovar 3</a>
+                            <a href="#">ЦВЕТЫ</a>
                             <div class="submenu">
-                                <a href="#">Tovar 3 version 1</a>
-                                <a href="#">Tovar 3 version 2</a>
-                                <a href="#">Tovar 3 version 3</a>
+                                <a href="#">Розы</a>
+                                <a href="#">Пионы</a>
+								<a href="#">Тюльпаны</a>
+                                <a href="#">Орхидеи</a>
+								<a href="#">Ирисы</a>
+								<a href="#">Гиацинты</a>
                             </div>
                             <div class="submenu_mover">V</div>
                         </div>
@@ -174,12 +181,12 @@
                         </tfoot>
                     </table>
                     <form id="orderdata">
-                        <input type="text" id="name">
-                        <input type="text" id="address">
-                        <input type="text" id="email">
-                        <input type="text" id="date">
+                        <input type="text" id="name" placeholder="ФИО">
+                        <input type="text" id="address" placeholder="Адрес">
+                        <input type="text" id="email" placeholder="Эл.почта">
+                        <input type="text" id="date" placeholder="Выберите дату доставки">
                         <textarea id="comment"></textarea>
-                        <button type="submit">Отправить заказ</button>
+                        <button type="submit" id="order-but">Отправить заказ</button>
                     </form>
                 </div>
 			</main>
@@ -222,6 +229,11 @@
 				</div>
 				<div class="copyright">&copy; 2021 Mamedli Nilufer</div>
 			</footer>
+			<div class="popup-desk">
+				<div class="popup">
+					
+				</div>
+			</div>
 		</div>
 	</body>
 </html>

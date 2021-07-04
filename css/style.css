@@ -31,7 +31,7 @@ body{
 .popup {
 	position: absolute;
 	left: calc(50% - 150px);
-	top: 300px;
+	top: 200px;
 	width: 300px;
 	background: rgba(247,249,150,1);
 	border-radius: 20px;
@@ -216,6 +216,8 @@ footer {
 	border:none;
 	border-radius:2px;
 	background:rgba(247,249,150,0.6);
+	margin:0;
+	display:inline;
 }
 .footermenupoint{
 	display:flex;
@@ -310,4 +312,74 @@ aside{
 .submenu a:before {
 	position: absolute;
 	left: 0;
+}
+
+/*order*/
+.order {
+	width: 100%;
+}
+.nihil {
+	display: none;
+}
+.empty .nihil {
+	display: block;
+}
+.empty .table,
+.empty #orderdata {
+	display: none;
+}
+.rub:after, .sum:after, .allsum:after {
+	content: ' \20bd';
+}
+.num input {
+	border: 0;
+	width: 50px;
+}
+.del {
+	width: 60px;
+}
+.del > div {
+	width: 24px;
+	height: 24px;
+	border-radius: 24px;
+	text-align: center;
+	font: normal 24px/24px Arial;
+	transform: rotate(45deg);
+	transform-origin: center;
+	background: red;
+	color: white;
+	cursor: pointer;
+}
+#name, #date, #address, #email{
+	display:block;
+	margin:15px;
+	padding:0;
+	width:200px;
+}
+.orderdata input, button, textarea{
+	display:block;
+	margin:15px;
+	padding:0;
+	width:200px;
+}
+#order-but{
+	background:rgb(112,171,151);
+	border:none;
+	border-radius:2px;
+	height:24px;
+}
+/*calendar*/
+.popup table{
+	width:240px;
+}
+.popup .header{
+	text-align:center;
+}
+.popup .header > span{
+	margin:0 10px;
+	cursor:pointer;
+}
+.popup td:hover{
+	color:red;
+	cursor: default;
 }
