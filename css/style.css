@@ -39,6 +39,41 @@ body{
 	box-sizing: border-box;
 	z-index:3;
 }
+.gorod p {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.gorod button {
+	border: none;
+	color: white;
+	width: calc(50% - 10px);
+}
+.gorod button:first-of-type {
+	background: green;
+	margin: 0 10px 0 0;
+}
+.gorod button:last-of-type {
+	background: red;
+	margin: 0 0 0 10px;
+}
+.lightbox {
+	left: 30px;
+	right: 30px;
+	top: 30px;
+	width: auto;
+}
+.lightbox img {
+	max-width: 100%;
+}
+.cross {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	color: red;
+	font: bold 30px Arial;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
 .popup-header{
 	color:rgb(112,171,151);
 	text-transform:uppercase;
@@ -63,25 +98,48 @@ body{
 	border-radius:2px;
 }
 .preheader{
-	display:flex;
-	float:right;
-	width:100px;
 	justify-content:space-around;
 	margin:16px 40px 16px;
+	box-sizing:border-box;
+	height:40px;
+}
+.socinfo{
+	float:right;
+}
+#yourcity{
+	float:left;
+}
+.socinfo a{
+	text-decoration:none;
 }
 /* header */
 header{
 	height:100%;
 }
 .topheader {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	flex-wrap:nowrap;
 	background: #fff;
 	color: black;
-	height:220px;
 	box-sizing:border-box;
+
 }
 .topheader .container{
 	height:inherit;
 	box-sizing:border-box;
+}
+
+.tophblock{
+	width:400px;
+	float:left;
+}
+.tophblock:first-child{
+	margin-bottom:20px;
+}
+.tophblock:last-child{
+	float:right;
 }
 .logo{
 	max-width:300px;
@@ -101,7 +159,6 @@ header{
 }
 .basket {
 	float: right;
-	margin: 50px -120px 30px 30px;
 	border: 1px solid rgb(112,171,151);
 	background:rgba(247,249,150,0.6);
 	border-radius:2px;

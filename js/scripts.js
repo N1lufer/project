@@ -1,4 +1,17 @@
 $(function(){
+	$('#yourcity').click(function(){
+        $('.popup-desk').addClass('active').html('<div class="popup gorod"><p>Ваш город - Москва?</p><button class="yes" type="button">ДА</button><button class="no"  type="button">НЕТ</button></div>');
+        $('.gorod button').click(function(){
+            // if $('.gorod button').index(this) == 1
+            // if $(this).html() == 'НЕТ'
+            if ($(this).hasClass('no')) {
+                $('#yourcity').html('<p>Ваш город: Немосква</p>');
+            } else {
+                $('#yourcity').html('<p>Ваш город: Москва</p>');
+            }
+            $('.popup-desk').click();
+        })
+    });
     $('.submenu_mover').click(function(){
         if ($(this).parent().hasClass('open')) {
             $('.catmenu_item.open').removeClass('open').find('.submenu').animate({
