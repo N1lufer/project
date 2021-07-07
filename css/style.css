@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
-
+html{
+	height:100%;
+}
 body{
+	height:100%;
 	margin: 0;
 	font-family: 'Nunito', sans-serif;
 	font-weight:400;
@@ -8,7 +11,7 @@ body{
 .wrapper {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 100%;
 }
 .container {
 	max-width: 1168px;
@@ -44,16 +47,17 @@ body{
 	margin-bottom: 10px;
 }
 .gorod button {
+	display:inline-block;
 	border: none;
 	color: white;
 	width: calc(50% - 10px);
 }
 .gorod button:first-of-type {
-	background: green;
+	background: gray;
 	margin: 0 10px 0 0;
 }
 .gorod button:last-of-type {
-	background: red;
+	background: gray;
 	margin: 0 0 0 10px;
 }
 .lightbox {
@@ -69,7 +73,7 @@ body{
 	position: absolute;
 	right: 10px;
 	top: 5px;
-	color: red;
+	color: black;
 	font: bold 30px Arial;
 	transform: rotate(45deg);
 	cursor: pointer;
@@ -114,6 +118,7 @@ body{
 }
 /* header */
 header{
+	flex:none;
 	height:100%;
 }
 .topheader {
@@ -230,6 +235,7 @@ header{
 
 /* main */
 main {
+	flex:1 0 auto;
 	position:relative;
 	background: #fff;
 }
@@ -239,6 +245,7 @@ main {
 }
 /* footer */
 footer {
+	flex:none;
 	background: rgb(112,171,151);
 	color: #fff;
 	height:auto;
@@ -256,8 +263,8 @@ footer {
 	margin-top:30px;
 }
 .subscription{
-	position:relative !important;
-	height:36px !important;
+	position:relative ;
+	height:36px;
 }
 .subscription div{
 	box-sizing:content-box;
@@ -439,4 +446,31 @@ aside{
 .popup td:hover{
 	color:red;
 	cursor: default;
+}
+/*product*/
+.product {
+	width: 100%;
+}
+.gallery-desk {
+	width: 530px;
+	float: left;
+	margin-right: 10px;
+}
+.main-image {
+	padding: 24px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 25px;
+}
+.gallery {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.small-image {
+	width: 170px;
+	padding: 4px;
+	background: #fff;
+	border: 1px solid #000;
+	border-radius: 5px;
 }
