@@ -33,3 +33,12 @@ function seebigimage() {
     // проявляем попап
     document.querySelector('.popup-desk').classList.add('active');
 }
+function changeimage(event) { // аргументом будет событие клика
+    // из объекта события мы берем указатель на место события - event.target
+    // это место - наша картинка
+    // из ее атрибута src вычисляем адрес картинки среднего размера
+    let imageurl = event.target.src.split('_small').join('_medium');
+    
+    // всталяем этот адрес в атрибут src главной картинки
+    document.querySelector('.main-image img').src = imageurl;
+}

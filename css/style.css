@@ -103,9 +103,9 @@ body{
 }
 .preheader{
 	justify-content:space-around;
-	margin:16px 40px 16px;
+	padding: 20px 32px;
 	box-sizing:border-box;
-	height:40px;
+	height:60px;
 }
 .socinfo{
 	float:right;
@@ -450,6 +450,8 @@ aside{
 /*product*/
 .product {
 	width: 100%;
+	flex:1 1 auto;
+	display:flex;
 }
 .gallery-desk {
 	width: 530px;
