@@ -245,6 +245,9 @@ footer {
 	color: #fff;
 	height:auto;
 }
+.contacts .address,.mail,.tel{
+	font-size:15px;
+}
 .shopname{
 	text-align:center;
 	color:rgba(247,249,150,1);
@@ -445,14 +448,18 @@ aside{
 }
 .popup .header{
 	text-align:center;
+	display:flex;
+	justify-content:space-between;
 }
 .popup .header > span{
-	margin:0 10px;
 	cursor:pointer;
+	font-weight:bold;
 }
 .popup td:hover{
 	color:red;
 	cursor: default;
+	background:rgb(112,171,151);
+	cursor:pointer;
 }
 /*product*/
 .pro{
@@ -473,6 +480,9 @@ aside{
 	background: #fff;
 	border: 1px solid #000;
 	border-radius: 25px;
+}
+.main-image img{
+	width:480px;
 }
 .gallery {
 	margin-top: 10px;

@@ -68,9 +68,11 @@ $(function(){
             makePopup(TODAY.getFullYear(),TODAY.getMonth());
         }
     });
-    
-    $('#date').mask('00-00-0000');
-    
+	
+    if ($('#date').length){
+		$('#date').mask('00-00-0000');
+    }
+	
     $('#orderdata').on('submit', function(e){// отправка формы
         e.preventDefault();
         orderAction();
