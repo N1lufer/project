@@ -299,15 +299,18 @@ footer {
 	padding-top: 20px;
 }
 footer .address::before{
-	content:"\1F4CD";
+	font-family:'icomoon';
+	content: "\e947";
 	margin:5px;
 }
 .tel::before{
-	content:"\1F57B";
+	font-family:'icomoon';
+	content: "\e942";
 	margin:6px;
 }
 .mail::before{
-	content:"\0040";
+	font-family:'icomoon';
+	content:"\e945";
 	margin:5px;
 }
 
@@ -510,4 +513,30 @@ aside{
 }
 .map{
 	margin:20px 0;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?tgz14j');
+  src:  url('../fonts/icomoon.eot?tgz14j#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?tgz14j') format('truetype'),
+    url('../fonts/icomoon.woff?tgz14j') format('woff'),
+    url('../fonts/icomoon.svg?tgz14j#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
