@@ -118,7 +118,6 @@ body{
 	margin:0;
 	cursor:pointer;
 }
-
 .socinfo a{
 	text-decoration:none;
 }
@@ -165,7 +164,7 @@ header{
 	color:rgb(112,171,151);
 	letter-spacing: 3px;
 }
-.basket {
+.login{
 	float: right;
 	border: 1px solid rgb(112,171,151);
 	background:rgba(247,249,150,0.6);
