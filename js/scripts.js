@@ -25,7 +25,8 @@ $(function(){
             $('.popup-desk').click();
         })
     });
-    $('.submenu_mover').click(function(){
+    
+	$('.submenu_mover').click(function(){
         if ($(this).parent().hasClass('open')) {
             $('.catmenu_item.open').removeClass('open').find('.submenu').animate({
                 height: 0
@@ -39,7 +40,7 @@ $(function(){
             }, 1000);
         }
     });
-	
+    
     
     /*$('button.basket').click(function(){
         $('.popup-desk').addClass('active');

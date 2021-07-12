@@ -329,7 +329,7 @@ footer .address::before{
 }
 .cat_part{
 	height: 250px;
-	width: 200px;
+	width: 190px;
 }
 .cat_button{
 	width: 150px;
@@ -341,12 +341,12 @@ footer .address::before{
 .cat_img{
 	object-fit: cover;
 	height: 200px;
-	width: 200px;
+	width: 190px;
 }
 /*aside*/
 aside{
 	flex:none;
-	width: 300px;
+	width: 310px;
 	background:rgba(247,249,150,0.6);
 	border-radius:20px;
 }
@@ -513,6 +513,137 @@ aside{
 }
 .map{
 	margin:20px 0;
+}
+/* different screens */
+
+@media (max-width: 1400px) {
+	.cat-blocks {
+		gap: 14px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.cat-blocks {
+		gap: 22px;
+	}
+}
+
+@media (max-width: 992px) {
+	.cat-blocks {
+		gap: 10px;
+	}
+	aside {
+		width: 260px;
+	}
+}
+
+@media (max-width: 768px) {
+	.cat-blocks {
+		gap: 4px;
+	}
+	aside {
+		display: block;
+		width: 160px;
+	}
+	.footermenu{
+		margin-left:40px
+	}
+}
+
+@media (max-width: 700px){
+	footer{
+	flex-wrap:nowrap;
+	}
+}
+@media (max-width: 576px) {
+	.cat-blocks {
+		gap: 32px;
+	}
+	.catalog {
+		gap: 16px;
+	}
+	.footerinfo{
+    flex-direction: column;
+    margin-top: 30px;
+    font-size: 14px;
+	}
+	.contacts{
+		margin: 0 auto;
+	}
+	.subscription{
+	margin: 20px auto;
+	width: 283px
+	}
+	.footermenu{
+	margin: 20px auto 0;
+    width: 283px;
+	}
+	.logoname{
+		font-size:20px;
+	}
+}
+@media (max-width: 510px){
+	.login{
+		display:none;
+	}
+}
+@media (max-width: 440px){
+	.login{
+		display:none;
+	}
+	.logo{
+		display:none;
+	}
+}
+@media (max-width: 375px){
+	
+	
+	.logo{
+		display:none;
+	}
+	.topmenu{
+		padding:16px;
+	}
+	.logoname{
+		font-size: 20px;
+	}
+}
+@media (max-width: 381px){
+	.preheader{
+	justify-content: space-around;
+	}
+	#yourcity{
+		display:none;
+	}
+	.socinfo{
+		display:none;
+	}
+	.topmenu{
+		font-size:14px;
+	}
+	.copyright{
+		font-size:14px;
+	}
+}
+@media (max-width: 219px){
+	.logoname{
+		font-size:16px;
+	}
+	.topmenu{
+		font-size:12px;
+	}
+	.shopname{
+		font-size:12px;
+	}
+	.footerinfo{
+		font-size:12px;
+	}
+	.contacts .address, .mail, .tel {
+    font-size: 12px;
+	}
+	.copyright{
+		font-size:12px;
+	}
 }
 
 @font-face {
