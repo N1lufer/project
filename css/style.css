@@ -7,6 +7,7 @@ body{
 	margin: 0;
 	font-family: 'Nunito', sans-serif;
 	font-weight:400;
+	min-width:320px;
 }
 .wrapper {
 	display: flex;
@@ -244,6 +245,7 @@ footer {
 	color: #fff;
 	height:auto;
 }
+
 .contacts .address,.mail,.tel{
 	font-size:15px;
 }
@@ -505,7 +507,7 @@ aside{
 	border-radius: 5px;
 }
 /*contacts*/
-.container.contacts{
+.contactsp{
 	padding-left:100px;	
 }
 .c-info{
@@ -513,6 +515,12 @@ aside{
 }
 .map{
 	margin:20px 0;
+}
+.socinfop{
+	
+}
+.socinfop a{
+	text-decoration:none;
 }
 /* different screens */
 
@@ -536,7 +544,22 @@ aside{
 		width: 260px;
 	}
 }
-
+@media (max-width: 956px){
+	.gallery-desk {
+    width: 500px;
+	}
+	.main-image img {
+    width: 450px;
+	}
+}
+@media (max-width: 956px){
+	aside{
+		width:200px;
+	}
+	.catmenu{
+		font-size: 10px;
+	}
+}
 @media (max-width: 768px) {
 	.cat-blocks {
 		gap: 4px;
@@ -548,11 +571,34 @@ aside{
 	.footermenu{
 		margin-left:40px
 	}
+	.contacts{
+		width:200px;
+	}
+	aside{
+		display:none;
+	}
+	.cat_unit{
+		justify-content:center;
+	}
 }
 
 @media (max-width: 700px){
 	footer{
-	flex-wrap:nowrap;
+		flex-wrap:nowrap;	
+	}
+}
+@media (max-width: 660px){
+	.gallery-desk{
+		width:350px;
+	}
+	.main-image img {
+		width: 300px;
+	}
+	.small-image{
+		width:110px;
+	}
+	.small-image img{
+		width:100px;
 	}
 }
 @media (max-width: 576px) {
@@ -563,12 +609,13 @@ aside{
 		gap: 16px;
 	}
 	.footerinfo{
-    flex-direction: column;
-    margin-top: 30px;
-    font-size: 14px;
+		flex-direction: column;
+		margin-top: 30px;
+		font-size: 14px;
 	}
 	.contacts{
 		margin: 0 auto;
+		width:auto;
 	}
 	.subscription{
 	margin: 20px auto;
@@ -581,10 +628,33 @@ aside{
 	.logoname{
 		font-size:20px;
 	}
+	.table{
+		font-size: 13px;
+	}
+	#name, #date, #address, #email {
+	font-size:13px;
+	}
 }
 @media (max-width: 510px){
 	.login{
 		display:none;
+	}
+}
+@media  (max-width: 462px){
+	.gallery-desk {
+		width: 250px;
+	}
+	.main-image img {
+		width: 200px;
+	}
+	.gallery{
+		flex-wrap: wrap;
+	}
+	.table{
+		font-size: 10px;
+	}
+	#name, #date, #address, #email {
+	font-size:12px;
 	}
 }
 @media (max-width: 440px){
@@ -595,19 +665,16 @@ aside{
 		display:none;
 	}
 }
-@media (max-width: 375px){
-	
-	
-	.logo{
-		display:none;
+@media (max-width: 390px){
+	.table{
+		font-size: 9px;
 	}
-	.topmenu{
-		padding:16px;
-	}
-	.logoname{
-		font-size: 20px;
+	#name, #date, #address, #email, #comment{
+	font-size:12px;
+	width:150px;
 	}
 }
+
 @media (max-width: 381px){
 	.preheader{
 	justify-content: space-around;
@@ -624,8 +691,40 @@ aside{
 	.copyright{
 		font-size:14px;
 	}
+	.subscription{
+		display:none;
+	}
+	
 }
-@media (max-width: 219px){
+@media (max-width: 375px){
+	.logo{
+		display:none;
+	}
+	.topmenu{
+		padding:16px;
+	}
+	.logoname{
+		font-size: 20px;
+	}
+
+}
+@media (max-width: 354px){
+	.gallery-desk {
+		width: 200px;
+	}
+	.main-image img {
+		width: 150px;
+	}
+	.small-image{
+		margin-top: 10px;
+	}
+}
+@media (max-width: 320px){
+	.footermenu{
+		width:250px;
+	}	
+}
+/*@media (max-width: 219px){
 	.logoname{
 		font-size:16px;
 	}
@@ -644,7 +743,11 @@ aside{
 	.copyright{
 		font-size:12px;
 	}
-}
+	.footermenu{
+		width:180px;
+	}
+	
+}*/
 
 @font-face {
   font-family: 'icomoon';
