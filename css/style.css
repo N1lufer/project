@@ -564,10 +564,6 @@ aside{
 	.cat-blocks {
 		gap: 4px;
 	}
-	aside {
-		display: block;
-		width: 160px;
-	}
 	.footermenu{
 		margin-left:40px
 	}
@@ -633,6 +629,13 @@ aside{
 	}
 	#name, #date, #address, #email {
 	font-size:13px;
+	}
+	.del > div {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font: normal 20px/20px Arial;
 	}
 }
 @media (max-width: 510px){
