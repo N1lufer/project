@@ -513,6 +513,14 @@ aside{
 .c-info{
 	margin:20px 0;
 }
+.c-info-t{
+	font-weight:bold;
+}
+.c-info .address::before{
+	font-family:'icomoon';
+	content: "\e947";
+	margin:5px;
+}
 .map{
 	margin:20px 0;
 }
@@ -560,6 +568,15 @@ aside{
 		font-size: 10px;
 	}
 }
+@media (max-width: 857px){
+	aside{
+		display:none;
+	}
+	
+	.cat_unit{
+		justify-content:center;
+	}
+}
 @media (max-width: 768px) {
 	.cat-blocks {
 		gap: 4px;
@@ -569,12 +586,6 @@ aside{
 	}
 	.contacts{
 		width:200px;
-	}
-	aside{
-		display:none;
-	}
-	.cat_unit{
-		justify-content:center;
 	}
 }
 
@@ -595,6 +606,9 @@ aside{
 	}
 	.small-image img{
 		width:100px;
+	}
+	iframe{
+		width:400px;
 	}
 }
 @media (max-width: 576px) {
@@ -637,10 +651,16 @@ aside{
     text-align: center;
     font: normal 20px/20px Arial;
 	}
+	.contactsp {
+    padding-left: 50px;
+	}
 }
 @media (max-width: 510px){
 	.login{
 		display:none;
+	}
+	iframe{
+		width:370px;
 	}
 }
 @media  (max-width: 462px){
@@ -659,6 +679,9 @@ aside{
 	#name, #date, #address, #email {
 	font-size:12px;
 	}
+	iframe{
+		width:350px;
+	}
 }
 @media (max-width: 440px){
 	.login{
@@ -666,6 +689,12 @@ aside{
 	}
 	.logo{
 		display:none;
+	}
+		.contactsp {
+    padding-left: 25px;
+	}
+	iframe{
+		width:320px;
 	}
 }
 @media (max-width: 390px){
@@ -675,6 +704,9 @@ aside{
 	#name, #date, #address, #email, #comment{
 	font-size:12px;
 	width:150px;
+	}
+	#order-but {
+    width: 150px;
 	}
 }
 
